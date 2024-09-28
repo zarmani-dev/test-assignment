@@ -6,6 +6,10 @@ const LabelCheckbox = ({ label }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isActive, setIsActive] = useState(false);
 
+  const handleToggle = () => {
+    setChecked((prev) => !prev);
+  };
+
   return (
     <button
       onClick={() => setChecked(!checked)}
@@ -21,6 +25,7 @@ const LabelCheckbox = ({ label }) => {
         setChecked={setChecked}
         isHovered={isHovered}
         isActive={isActive}
+        onClick={handleToggle}
       />
     </button>
   );

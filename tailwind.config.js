@@ -16,7 +16,7 @@ export default {
         secondaryCheckboxBg: "#5087F8",
         hoveredBtn: "#FFD84D",
         hoverCheckbox: "#E3E3E3",
-        activeCheckbox: "#878787",
+        activeCheckbox: "#7c7c7c",
       },
     },
   },

@@ -1,4 +1,4 @@
-const Checkbox = ({ checked, setChecked, isHovered, isActive }) => {
+const Checkbox = ({ checked, setChecked, isHovered, isActive, onClick }) => {
   return (
     <label
       className={`flex items-center justify-center w-[23px] h-[23px] rounded-[6px] shadow-sm cursor-pointer border border-[#CDCDCD] ${
@@ -11,16 +11,17 @@ const Checkbox = ({ checked, setChecked, isHovered, isActive }) => {
     >
       <input
         type="checkbox"
-        className="hidden peer"
+        className="hidden "
         checked={checked}
-        onChange={() => setChecked(!checked)}
+        onChange={() => setChecked((prev) => !prev)}
+        onClick={onClick}
       />
       <svg
         className={`w-[17px] h-[12px] ${
           checked
             ? "text-white"
-            : `text-transparent ${isHovered && "text-hoverCheckbox"} ${
-                isActive && "text-activeCheckbox"
+            : ` ${isHovered ? "text-hoverCheckbox" : "text-transparent"} ${
+                isActive ? "text-activeCheckbox" : ""
               }`
         }`}
         width="17"
