@@ -1,7 +1,7 @@
-const Checkbox = ({ size = 25, checked, setChecked, isHovered, isActive }) => {
+const Checkbox = ({ checked, setChecked, isHovered, isActive }) => {
   return (
     <label
-      className={`flex items-center justify-center size-[${size}px]  rounded-[6px] shadow-sm cursor-pointer border border-[#CDCDCD] ${
+      className={`flex items-center justify-center w-[23px] h-[23px] rounded-[6px] shadow-sm cursor-pointer border border-[#CDCDCD] ${
         isActive && "border-2 border-lightBlue"
       }  ${
         checked

@@ -17,7 +17,6 @@ const LabelCheckbox = ({ label }) => {
     >
       <label htmlFor="checkbox">{label}</label>
       <Checkbox
-        size={23}
         checked={checked}
         setChecked={setChecked}
         isHovered={isHovered}
