@@ -1,6 +1,6 @@
+import Button from "./components/Button";
 import LabelCheckbox from "./components/LabelCheckbox";
 import Separator from "./components/Separator";
-import Button from "./components/Button";
 
 function App() {
   const pages = ["Page 1", "Page 2", "Page 3", "Page 4", "Page 5", "Page 6"];
