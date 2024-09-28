@@ -21,7 +21,7 @@ const Checkbox = ({ checked, setChecked, isHovered, isActive, onClick }) => {
           checked
             ? "text-white"
             : ` ${isHovered ? "text-hoverCheckbox" : "text-transparent"} ${
-                isActive ? "text-[#7c7c7c]" : ""
+                isActive && "text-black/40"
               }`
         }`}
         width="17"

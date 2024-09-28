@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  options: {
+    safelist: ["bg-checkboxBg", "text-activeCheckbox", "border-lightBlue"], // Add any dynamic classes here
+  },
   theme: {
     extend: {
       fontFamily: {
@@ -16,7 +19,6 @@ export default {
         secondaryCheckboxBg: "#5087F8",
         hoveredBtn: "#FFD84D",
         hoverCheckbox: "#E3E3E3",
-        activeCheckbox: "#7c7c7c",
       },
     },
   },
